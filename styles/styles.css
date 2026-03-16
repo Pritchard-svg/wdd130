@@ -48,3 +48,7 @@ footer {
     float: right;
     margin: 0 0 1rem 1rem;
 }
+
+ul {
+    clear: right;
+}
