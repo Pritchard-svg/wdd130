@@ -1,10 +1,14 @@
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    /* Dark Green - Good Contrast */
+    --secondary-color: #8c4a16;
+    /* Darkened for better AA contrast */
+    --accent1-color: #1d3557;
+    /* Dark Navy for text */
+    --accent2-color: #f1faee;
+    /* Very light for backgrounds */
     --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, sans-serif;
 
 }
 
@@ -15,101 +19,153 @@
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+    max-width: 900px;
+    /* Centers the content and keeps it uniform */
+    margin: 0 auto;
+    padding: 20px;
+    /* This adds a nice breathing room around the page */
+    background-color: var(--accent2-color);
+
 }
 
 /* Header & Logo */
-.header-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* Logo on the left, nav takes the remaining space */
+    align-items: center;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px 20px;
     margin-bottom: 20px;
 }
 
 .logo-box img {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
-/* Navigation List */
-nav ul {
-    list-style-type: disc;
-    padding-left: 25px;
-    margin-top: 10px;
+/* Nav: Using CSS Flex for the horizontal layout as required */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    /* Pushes nav links to the right */
 }
 
-nav ul li {
-    margin-bottom: 5px;
+nav ul {
+    list-style-type: none;
+    /* Removes bullet points */
+    display: flex;
+    /* Flex used for horizontal alignment */
+    gap: 20px;
 }
 
 nav ul li a {
-    color: blue;
-    text-decoration: underline;
-    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    color: white !important;
 }
 
 /* Main Content & Hero */
-main {
-    margin-top: 20px;
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Large Background/Hero Image */
-.hero > img:first-of-type {
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent for legibility */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-bg {
     width: 100%;
     height: auto;
     display: block;
-    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-h1,
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    margin: 20px 0 10px 0;
+    border-bottom: 1px solid var(--accent2-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-/* Abaout Us Section (The Text Wrap) */
+/* Article Styling (History/Clients) */
 article {
     overflow: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px 0 40px 0;
 }
 
 article img {
     float: left;
-    width: 150px;
+    width: 250px;
+    /* Larger for a better impact */
     margin-right: 20px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adventure Section (The specific fix for the checklist) */
+.adventure img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 /* Footer & Social Media */
 footer {
-    margin-top: 40px;
+    margin-top: 50px;
     border-top: 2px solid var(--secondary-color);
-    padding-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer p {
-    font-size: 0.8rem;
-    margin-bottom: 15px;
+    font-size: 0.9rem;
     font-style: italic;
 }
 
 .socialmedia {
     display: flex;
+    /* Horizontal layout for icons */
     gap: 15px;
 }
 
-.socialmedia a img {
-    width: 80px;
+.socialmedia img {
+    width: 35px;
+    /* Standard size for social icons */
     height: auto;
-    border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.socialmedia a img:hover {
-    transform: scale(1.05);
+.socialmedia img:hover {
+    transform: translateY(-5px);
+    /* Bounces up on hover */
 }
 
 /* Responsive adjustment */
