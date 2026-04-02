@@ -1,0 +1,135 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 40px 20px;
+}
+
+/* ===== PAGE HEADING ===== */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* ===== FORM CONTAINER ===== */
+form {
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== FIELDSET ===== */
+fieldset {
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ===== LABELS ===== */
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* ===== TEXT INPUT & NUMBER INPUT ===== */
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #2980b9;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* ===== TEXTAREA ===== */
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #333333;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* ===== SELECT DROPDOWN ===== */
+select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #fafafa;
+    color: #333333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #2980b9;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #2980b9;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1a5f7a;
+}
+
+button[type="submit"]:active {
+    background-color: #154360;
+}

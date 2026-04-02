@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+</head>
+
+<body>
+
+    <h1>HTML & CSS Online Quiz</h1>
+
+    <form action="#" method="post">
+
+        <!-- Question 1: Text Input (Fill in the Blank) -->
+        <fieldset>
+            <label for="q1">1. What HTML tag is used to create a hyperlink? (Fill in the
+                blank)</label>
+            <input type="text" name="q1" id="q1" placeholder="Type your answer here" />
+        </fieldset>
+
+        <!-- Question 2: Textarea (Short Answer) -->
+        <fieldset>
+            <label for="q2">2. In your own words, explain the difference between margin and padding
+                in CSS.</label>
+            <textarea name="q2" id="q2" rows="5" cols="40"
+              placeholder="Write your answer here..."></textarea>
+        </fieldset>
+
+        <!-- Question 3: Select Dropdown -->
+        <fieldset>
+            <label for="q3">3. Which CSS property is used to change the text color of an
+                element?</label>
+            <select name="q3" id="q3">
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="a">font-color</option>
+                <option value="b">color</option>
+                <option value="c">text-color</option>
+            </select>
+        </fieldset>
+
+        <!-- Question 4: Number Input (Integer Answer) -->
+        <fieldset>
+            <label for="q4">4. How many heading levels does HTML provide? (Enter a number)</label>
+            <input type="number" name="q4" id="q4" min="1" max="20" placeholder="Enter a number" />
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Quiz</button>
+
+    </form>
+
+</body>
+
+</html>
