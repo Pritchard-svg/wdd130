@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Rafting Adventure Co.</title>
+    <meta name="description"
+      content="Get in touch with Rafting Adventure Co. for general inquiries, reservation questions, or website suggestions. We would love to hear from you.">
+    <meta name="author" content="Pritchard Zimondi">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header class="header-banner">
+        <div class="logo-box">
+            <img src="images/logo.png" alt="Company logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Company Information Section -->
+        <section class="company-info">
+            <h1>Rafting Adventure Co.</h1>
+            <p>123 Zambezi River Road</p>
+            <p>Victoria Falls, Zimbabwe</p>
+            <p>+263 83 123 4567</p>
+            <p>info@raftingadventureco.com</p>
+        </section>
+
+        <!-- Map and Form Section Side by Side -->
+        <section class="map-form-section">
+
+            <!-- Google Map on the Left -->
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.123456789!2d25.8572!3d-17.9243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDU1JzI3LjUiUyAyNcKwNTEnMjUuOSJF!5e0!3m2!1sen!2szw!4v1234567890"
+                  width="100%" height="400" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Rafting Adventure Co. Location">
+                </iframe>
+            </div>
+
+            <!-- Contact Form on the Right -->
+            <div class="form-container">
+                <form action="#" method="post">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name"
+                          required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"
+                          placeholder="Enter your email address" required>
+                    </div>
+
+                    <!-- Purpose of Message -->
+                    <fieldset class="form-group">
+                        <legend>Message Purpose</legend>
+
+                        <label>
+                            <input type="radio" name="purpose" value="general-inquiry" required>
+                            General Inquiry
+                        </label>
+
+                        <label>
+                            <input type="radio" name="purpose" value="reservation-question">
+                            Reservation Question
+                        </label>
+
+                        <label>
+                            <input type="radio" name="purpose" value="website-suggestion">
+                            Website Suggestion
+                        </label>
+
+                    </fieldset>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type here..."
+                          required></textarea>
+                    </div>
+
+                    <!-- Newsletter Checkbox -->
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="newsletter" value="subscribe">
+                            Please subscribe me to the monthly newsletter
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Get in Touch!</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+
+        <!-- Employee Profiles Section -->
+        <section class="employee-profiles">
+            <h2>We Are Here to Serve You</h2>
+
+            <div class="profiles-container">
+
+                <figure>
+                    <img src="images/Pritchard Zimondi.jpg" alt="Portrait of Pritchard Zimondi">
+                    <figcaption>Pritchard Zimondi<br>Head River Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Anna Kanyayi.jpeg" alt="Portrait of Anna Kanyayi">
+                    <figcaption>Anna Kanyayi<br>Safety Officer</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/Portia Gurupira.jpg" alt="Portrait of Portia Gurupira">
+                    <figcaption>Portia Gurupira<br>Customer Experience Manager</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rafting Adventure Co. - Pritchard N. Zimondi</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="blank">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+
+            <a href="https://instagram.com" target="blank">
+                <img src="images/instagram.jpg" alt="Instagram icon">
+            </a>
+
+            <a href="https://twitter.com" target="blank">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+
+        </nav>
+    </footer>
+
+</body>
+
+</html>
