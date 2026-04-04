@@ -21,9 +21,6 @@ body {
     font-family: var(--body-font);
 }
 
-/* =====================
-   HEADER & NAVIGATION
-   ===================== */
 .header-banner {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -65,9 +62,6 @@ nav ul li a:hover {
     color: white;
 }
 
-/* =====================
-   HEADINGS
-   ===================== */
 h1 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
@@ -83,9 +77,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* =====================
-   MAIN CONTENT & HERO
-   ===================== */
 .hero {
     position: relative;
     display: flex;
@@ -109,9 +100,6 @@ h2 {
     border-radius: 10px;
 }
 
-/* =====================
-   ARTICLE STYLING
-   ===================== */
 article {
     overflow: auto;
     margin-bottom: 20px;
@@ -126,9 +114,6 @@ article img {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* =====================
-   ADVENTURE SECTION
-   ===================== */
 .adventure img {
     width: 100%;
     height: auto;
@@ -136,11 +121,6 @@ article img {
     margin-top: 15px;
 }
 
-/* =====================
-   CONTACT PAGE STYLES
-   ===================== */
-
-/* Company Info - Centered at top */
 .company-info {
     text-align: center;
     padding: 30px 20px 20px 20px;
@@ -157,7 +137,6 @@ article img {
     line-height: 1.8;
 }
 
-/* Map and Form Side by Side */
 .map-form-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -180,7 +159,6 @@ article img {
     border-radius: 6px;
 }
 
-/* Form Container */
 .form-container {
     padding: 10px 0;
 }
@@ -231,7 +209,6 @@ article img {
     outline: none;
 }
 
-/* Fieldset for Radio Buttons */
 fieldset.form-group {
     border: none;
     display: grid;
@@ -255,7 +232,6 @@ fieldset.form-group label {
     grid-column: 2;
 }
 
-/* Checkbox Row */
 .form-group.checkbox-group {
     grid-template-columns: 1fr;
 }
@@ -267,7 +243,6 @@ fieldset.form-group label {
     font-weight: normal;
 }
 
-/* Submit Button */
 .submit-btn {
     width: 100%;
     padding: 12px;
@@ -287,9 +262,6 @@ fieldset.form-group label {
     color: white;
 }
 
-/* =====================
-   EMPLOYEE PROFILES
-   ===================== */
 .employee-profiles {
     background-color: #ede8f5;
     padding: 30px 20px;
@@ -334,9 +306,6 @@ fieldset.form-group label {
     text-align: center;
 }
 
-/* =====================
-   FOOTER
-   ===================== */
 footer {
     margin-top: 50px;
     border-top: 2px solid var(--secondary-color);
@@ -369,9 +338,6 @@ footer p {
     transform: translateY(-5px);
 }
 
-/* =====================
-   RESPONSIVE STYLES
-   ===================== */
 @media (max-width: 600px) {
 
     .map-form-section {
