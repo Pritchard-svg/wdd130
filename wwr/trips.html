@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Trips | Rafting Adventure Co.</title>
+    <meta name="description"
+      content="Explore Rafting Adventure Co.'s Zambezi trips — from beginner-friendly floats to extreme Grade 5 rapids. Detailed descriptions, pricing, and a full trip table included.">
+    <meta name="author" content="Pritchard Zimondi">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header class="header-banner">
+        <div class="logo-box">
+            <img src="images/logo.png" alt="Rafting Adventure Co. logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Call to Action at the top linking to contact.html -->
+        <section class="trips-cta-top">
+            <p>Have questions about a trip or ready to book?
+                <a href="contact.html" class="cta-btn">Contact Us Today &rarr;</a>
+            </p>
+        </section>
+
+        <!-- Page Heading -->
+        <section class="trips-hero">
+            <h1>Our Zambezi Adventures</h1>
+            <p class="trips-intro">Whether you are stepping into a raft for the first time or
+                chasing the ultimate adrenaline rush, we have a journey crafted for you. Every
+                trip is guided by our experienced Zambezi specialists who bring both safety and
+                storytelling to every stretch of the river.</p>
+        </section>
+
+        <!-- Trip Descriptions — CSS Grid, not single column -->
+        <section class="trip-cards">
+
+            <!-- Trip 1 -->
+            <article class="trip-card">
+                <img src="images/profile.jpg"
+                  alt="Calm Zambezi River at sunrise perfect for beginners">
+                <div class="trip-card-body">
+                    <h2>The Sunrise Float</h2>
+                    <p class="trip-tag">&#127774; Beginner &bull; Half Day &bull; All Ages Welcome</p>
+                    <p>Start your Zambezi story gently. The Sunrise Float takes you through the
+                        calmer upper stretches of the river as the African sun rises over the
+                        gorge. You will drift past basking hippos, soaring fish eagles, and
+                        ancient canyon walls painted gold by the morning light. No experience
+                        needed — just a sense of wonder and a willingness to get a little wet.</p>
+                    <ul class="trip-details-list">
+                        <li><strong>Duration:</strong> 4 hours</li>
+                        <li><strong>Difficulty:</strong> Grade 1–2</li>
+                        <li><strong>Group Size:</strong> Up to 12 people</li>
+                        <li><strong>Includes:</strong> Life jacket, paddle, light breakfast, guide</li>
+                        <li><strong>Price:</strong> $65 per person</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Trip 2 -->
+            <article class="trip-card trip-card-alt">
+                <img src="images/happy-client-enjoying-rafting.jpg"
+                  alt="Excited group navigating Grade 3 rapids on the Zambezi">
+                <div class="trip-card-body">
+                    <h2>The Gorge Runner</h2>
+                    <p class="trip-tag">&#127754; Intermediate &bull; Full Day &bull; Ages 16+</p>
+                    <p>The Gorge Runner is our most popular full-day trip — a breathtaking
+                        journey through the heart of the Batoka Gorge. You will paddle through
+                        a mix of calm stretches and exciting Grade 3–4 rapids with names like
+                        "The Washing Machine" and "Ghostrider." Between the rapids, your guide
+                        will share stories of the river's history and folklore. Lunch is served
+                        riverside under a Zambezi acacia tree.</p>
+                    <ul class="trip-details-list">
+                        <li><strong>Duration:</strong> 8 hours</li>
+                        <li><strong>Difficulty:</strong> Grade 3–4</li>
+                        <li><strong>Group Size:</strong> Up to 10 people</li>
+                        <li><strong>Includes:</strong> Full safety gear, riverside lunch, guide, photos</li>
+                        <li><strong>Price:</strong> $130 per person</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Trip 3 -->
+            <article class="trip-card">
+                <img src="images/white-water-rafting-adventure.jpg"
+                  alt="Raft plunging through massive Grade 5 Zambezi rapids">
+                <div class="trip-card-body">
+                    <h2>The Zambezi Extreme</h2>
+                    <p class="trip-tag">&#128293; Advanced &bull; Full Day &bull; Ages 18+ &bull; Fitness Required</p>
+                    <p>This is the real thing. The Zambezi Extreme takes you through some of
+                        the most powerful commercial white-water rapids on the planet —
+                        including the infamous Grade 5 rapid known as "Oblivion." You will
+                        flip, swim, and laugh your way through a day that will live in your
+                        memory forever. Our expert guides and safety kayakers are with you
+                        every stroke of the way.</p>
+                    <ul class="trip-details-list">
+                        <li><strong>Duration:</strong> 9 hours</li>
+                        <li><strong>Difficulty:</strong> Grade 4–5</li>
+                        <li><strong>Group Size:</strong> Up to 8 people</li>
+                        <li><strong>Includes:</strong> Full safety gear, rescue kayakers, lunch, guide, video footage</li>
+                        <li><strong>Price:</strong> $185 per person</li>
+                    </ul>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Trips Summary Table -->
+        <section class="trips-table-section">
+            <h2>All Available Trips at a Glance</h2>
+            <div class="table-wrapper">
+                <table class="trips-table">
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Difficulty</th>
+                            <th>Duration</th>
+                            <th>Min. Age</th>
+                            <th>Group Size</th>
+                            <th>Price (USD)</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>The Sunrise Float</td>
+                            <td>Grade 1–2</td>
+                            <td>4 hours</td>
+                            <td>All ages</td>
+                            <td>Up to 12</td>
+                            <td>$65</td>
+                            <td>Daily</td>
+                        </tr>
+                        <tr>
+                            <td>The Gorge Runner</td>
+                            <td>Grade 3–4</td>
+                            <td>8 hours</td>
+                            <td>16+</td>
+                            <td>Up to 10</td>
+                            <td>$130</td>
+                            <td>Daily</td>
+                        </tr>
+                        <tr>
+                            <td>The Zambezi Extreme</td>
+                            <td>Grade 4–5</td>
+                            <td>9 hours</td>
+                            <td>18+</td>
+                            <td>Up to 8</td>
+                            <td>$185</td>
+                            <td>Mon, Wed, Fri, Sat</td>
+                        </tr>
+                        <tr>
+                            <td>Private Group Charter</td>
+                            <td>Customizable</td>
+                            <td>Flexible</td>
+                            <td>Varies</td>
+                            <td>10–30</td>
+                            <td>From $95/person</td>
+                            <td>By request</td>
+                        </tr>
+                        <tr>
+                            <td>School &amp; Youth Excursion</td>
+                            <td>Grade 1–2</td>
+                            <td>5 hours</td>
+                            <td>12+</td>
+                            <td>Up to 30</td>
+                            <td>$45/student</td>
+                            <td>Weekdays</td>
+                        </tr>
+                        <tr>
+                            <td>Sunset Paddling Experience</td>
+                            <td>Grade 1</td>
+                            <td>2 hours</td>
+                            <td>All ages</td>
+                            <td>Up to 14</td>
+                            <td>$40</td>
+                            <td>Tue, Thu, Sat, Sun</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Call to Action bottom — contact.html -->
+        <section class="trips-cta-bottom">
+            <h2>Found Your Perfect Trip?</h2>
+            <p>We would love to hear from you! Whether you have questions about a specific trip,
+                want to make a reservation, or need help choosing the right adventure for your
+                group — our team is ready and waiting.</p>
+            <a href="contact.html" class="cta-btn">Get in Touch with Us &rarr;</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rafting Adventure Co. - Pritchard N. Zimondi</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.jpg" alt="Instagram icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter icon">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
